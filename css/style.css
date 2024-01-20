@@ -1,0 +1,91 @@
+body{
+    background-color: #272B30;
+    font-family: "Shantell Sans", cursive;
+
+}
+
+
+
+/* style of header section */
+header {
+   width: 100%;
+   height: 25vh;
+   background-image: url(../images/wraper.png) ,linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+
+/* Style of navbar and mainbody section */
+.navbar{
+    background-color: #3A497B;
+   
+   
+}
+.navbar-brand{
+  font-size: medium;
+}
+.nav-item .nav-link{
+    color: white;
+    transition: color 1s;
+}
+.nav-item .nav-link.active{
+    color: #0099CC;
+}
+.nav-item .nav-link:hover{
+    color: #0099CC;
+    
+}
+
+.mainbody .card {
+   cursor: pointer;
+  
+   transition: transform 1s;
+}
+
+.mainbody .card:hover {
+    transform: scale(1.08,1.08);
+ }
+.mainbody .card .card-body p{
+  color: #888A8D;
+}
+.mainbody .card .card-body .hstack h3{
+    color: white;
+}
+
+/* loading Section  */
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: animateC 1s linear  infinite;
+  position: relative;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+
+
+
